@@ -1,0 +1,92 @@
+.delicious{
+    @include size;
+    margin-top: $spc-102;
+    &__delicious-text{
+        display: flex;
+        justify-content: space-between;
+        @media(max-width:780px){
+              display: inline;
+              margin-left: auto;
+              margin-right: auto;
+              text-align: center;
+              & p{
+                color: $color-eight-300;
+                @media(max-width:780px){
+                     margin-top: $spc-5;
+                  }
+              }
+          }
+    }
+    &__delicious-post{
+        @include size;
+        width: 100%;
+        height: 100%;
+        margin-top: $spc-107;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        gap: $spc-5;
+        margin-bottom: $spc-7;
+        @media (max-width:780px){
+              grid-template-columns: 1fr;
+              padding: $spc-0 $spc-5;
+          }
+          &__post1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: $spc-8;
+            @media (max-width:780px){
+                  width: $spc-full;
+                  & img{
+                    border-radius: $spc-8; 
+                  }
+              }
+              &__img-like{
+                position: relative;
+                border-radius: $spc-5;
+                @media (max-width:780px){
+                      max-width: $spc-123;
+                  }
+              }
+              &__img-like1{
+                position: absolute;
+                margin-top: $spc-4;
+               margin-left: $spc-125;
+               border-radius: $spc-8;
+               @media (max-width:1200px){
+                  margin-left: $spc-200;
+              }
+              @media (max-width:780px){
+                  margin-left: $spc-half;
+              }
+              }
+              &__post1-span{
+                padding-left: $spc-2;
+                font-size: $spc-4;
+                margin-top: $spc-6;
+                margin-right: $spc-5;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+              }
+              &__post1-date-food{
+                display: flex;
+               margin-top: $spc-5;
+               margin-right: $spc-7;
+               &__post1-date-food-left{
+                display: flex;
+                 gap: $spc-1;
+                 align-items: center;
+                 color: $color-eight-300;
+                padding-right: $spc-6;
+                white-space: nowrap;
+                }
+                &__post1-date-food-right{ 
+                    display: flex;
+                   gap: $spc-1;
+                  align-items: center;
+                   color:$color-eight-300;
+                   padding-right:$spc-6 ;
+                  }
+              }
+          }
+    }
+}
