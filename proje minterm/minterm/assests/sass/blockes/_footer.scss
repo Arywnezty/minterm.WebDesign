@@ -1,0 +1,92 @@
+.footer{
+    @include size;
+    background: $color-19-300;
+    margin-top: $spc-102;
+    position: relative;
+    top: $spc-0;
+    left: $spc-0;
+    overflow: hidden;
+    height: $spc-126;
+    border-radius: $spc-12;
+    @media(max-width:780px) {
+      margin-left: $spc-3;
+      margin-right: $spc-3;
+      }
+      & h1{
+        text-align: center;
+        padding-top: $spc-107;
+        font-size: $spc-127;
+      }
+      &__footer-lorem{
+        text-align: center;
+        margin-top: $spc-6;
+       color: $color-eight-300;
+      font-size: $spc-4;
+      }
+      &__img-footer1{
+          position: absolute;
+      bottom: -$spc-209;
+      left: -$spc-204;
+      transform: rotate($rt-45);
+      -webkit-transform: rotate($rt-32);
+      @media(max-width:780px) {
+          display: none;
+    }
+      }
+      &__img-footer2{
+        position: absolute;
+        bottom: -$spc-350;
+        right: -$spc-201;
+        transform: rotate($rt-45);
+        -webkit-transform: rotate($rt-1);
+        @media(max-width:780px) {
+            display: none;
+      }
+      }
+      &__img-footer3{
+        position: absolute;
+        bottom: $spc-210;
+        right: $spc-210;
+        transform: rotate($rt-45);
+        -webkit-transform: rotate(-$rt-32);
+        @media(max-width:780px) {
+            display: none;
+      }
+      }
+      &__footer-input{
+        max-width: $spc-123;
+        display: flex;
+        align-items: center;
+        background-color: $color-secondary-300;
+        border-radius: $spc-6;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        gap: $spc-109;
+        margin-top: $spc-12;
+        @media(max-width:512px) {
+          margin-left: $spc-2;
+          margin-right: $spc-2;
+        }
+        &__input-left{
+            white-space: nowrap;
+            color: $color-24-300;
+            @media(max-width:780px) {
+                  margin-right: -$spc-128;
+                  margin-left: auto;
+              }
+          }
+          &__input-right{
+            background-color: $color-primary-300;
+            color: $color-secondary-300;
+            padding: $spc-4 $spc-110;
+            margin-top: $spc-2;
+            margin-bottom: $spc-2;
+            border-radius: $spc-4;
+            @media(max-width:780px) {
+                  margin-right: auto;
+                  margin-left: auto;
+              }
+          }
+      }
+}
